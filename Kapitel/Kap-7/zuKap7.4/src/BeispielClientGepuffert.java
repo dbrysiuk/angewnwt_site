@@ -1,4 +1,5 @@
 import java.io.IOException;
+
 import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -20,35 +21,31 @@ public class BeispielClientGepuffert {
 		outToServer = new DataOutputStream(new BufferedOutputStream(linkZumServer.getOutputStream()));
 	}
 
-	public void tuWas() throws IOException {
-		int zahl;
+	public void tuWas(int repeat) throws IOException {
+		int summe;
 
-		do {
-			zahl = inFromServer.readInt(); //Zahl vom Server empfangen
-			System.out.print("Client Empfangen: "+zahl);
-			if(zahl <= 0 )
-				break;
-			else
-			{
-				zahl--; // Zahl um eins reduzieren
-				outToServer.writeInt(zahl); // neue Zahl an Client
-				outToServer.flush();
-				System.out.println(" gesendet: "+zahl);
-			}
+		for(int i=0; i < repeat; i++) {
+			outToServer.writeInt(i); 
+			outToServer.writeInt(i+1); 
+			System.out.print("Client gesendet: "+ i + ",  "+ (i+1));
+			outToServer.flush();
+			
+			summe = inFromServer.readInt(); 
+			System.out.println(" empfangen: "+summe);
 		}
-		while(true);
 	}
 
 	public void disconnect() throws IOException {
 		inFromServer.close();
 		outToServer.close();
 		linkZumServer.close();
+		System.out.println("Verbindung getrennt");
 	}
 
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		BeispielClientGepuffert meinClient = new BeispielClientGepuffert(InetAddress.getByName("127.0.0.1"),4711);
 
-		meinClient.tuWas();
+		meinClient.tuWas(100);
 
 		meinClient.disconnect();
 	}

@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("/Layout/header.php");
-include ("/Layout/navigation.php");
+include ("../Layout/header.php");
+include ("../Layout/navigation.php");
 ?>
 
 <body id="loes" onload="prettyPrint()">
@@ -23,7 +23,7 @@ include ("/Layout/navigation.php");
 <a href="uebungen.php"><button type="button">
 		<span>Lösungsvorschläge herunterladen</span>
 </button></a>
-<?php include("/Layout/buttonAnleitung.php") ?>
+<?php include("../Layout/buttonAnleitung.php") ?>
 <p>Das ZIP-Archiv beinhaltet Lösungsvorschläge zu den Übungsaufgaben im Buch in Form von <b>Java-Quellcodes</b> und <b>Wireshark-Aufzeichnungen</b>.</p>
 
 <p>Im Folgenden finden Sie zudem eine Vorschau, der enthalteten Quellcodes:</p>
@@ -89,6 +89,6 @@ meinPrettyfier($files)
 </body>
 
 <?php 
-include ("/Layout/footer.php");
+include ("../Layout/footer.php");
 ?>
 </html>

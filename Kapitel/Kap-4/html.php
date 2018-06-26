@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("/Layout/header.php");
-include ("/Layout/navigation.php");
+include ("../../Layout/header.php");
+include ("../../Layout/navigation.php");
 ?>
 
 <body id="html" onload="prettyPrint()">
@@ -32,7 +32,7 @@ Webserver beim Aufruf einer Webseite.</p>
 <article> <a href="../Kap-5/zuKap5.7/zuKap5.7.php"><button type="button">
 		<span>Begleitmaterial herunterladen</span>
 	</button></a>
-	<?php include ("/Layout/buttonAnleitung.php")?>
+	<?php include ("../../Layout/buttonAnleitung.php")?>
 <p>Das Begleitmaterial zu Kapitel 4.8 umfasst das Java-Programm <a href=#SiemensAnmeldungAbruf.java>SiemensAnmeldungAbruf</a> für den Zugriff auf den Webserver einer SPS, sowie 
 die HTML-Dokumente <i>Zaehler.html</i>, über welches sich der Zählerstand setzen und ändern lässt und <i>Zaehlerzusatz.html</i>, in welchem der Zählerstand steht.</p>
 <p>Der Ablauf des Programms beginnt mit der Übermittlung von Benutzername und Passwort mittels einer POST-Anfrage, anschließend wird das Dokument <i>Zaehlerzusatz.html</i> vom Webserver abgerufen und der Zählerstand extrahiert.</p>
@@ -78,6 +78,6 @@ meinPrettyfier($files)
 </body>
 
 <?php 
-include ("/Layout/footer.php");
+include ("../../Layout/footer.php");
 ?>
 </html>

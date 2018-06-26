@@ -5,14 +5,14 @@ import java.io.DataOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class BeispielServerGepuffert {
+public class BeispielServerGepuffertZweiSchleifen {
 	
 	ServerSocket serverSocket;
 	Socket linkZumClient;
 	DataInputStream inFromClient;
 	DataOutputStream outToClient; 
 	
-	public BeispielServerGepuffert( int port) throws IOException {
+	public BeispielServerGepuffertZweiSchleifen( int port) throws IOException {
 		serverSocket = new ServerSocket(port); // Socket erzeugen
 		System.out.println("Server gestartet.");
 	
@@ -34,9 +34,9 @@ public class BeispielServerGepuffert {
 			System.out.print("Server Empfangen: "+ zahl1 + ", " + zahl2);
 			summe = zahl1 + zahl2; 
 			outToClient.writeInt(summe); 
-			outToClient.flush();
 			System.out.println(" gesendet: "+summe);
 		}
+		outToClient.flush();
 	}
 
 	public void disconnect() throws IOException {
@@ -48,7 +48,7 @@ public class BeispielServerGepuffert {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		BeispielServerGepuffert meinServer = new BeispielServerGepuffert(4711);
+		BeispielServerGepuffertZweiSchleifen meinServer = new BeispielServerGepuffertZweiSchleifen(4711);
 	
 		meinServer.tuWas(100);
 		

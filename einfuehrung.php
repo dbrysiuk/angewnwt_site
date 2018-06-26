@@ -8,8 +8,8 @@
 </head>
 
 <?php
-include("Layout/header.php");
-include("Layout/navigation.php");
+include("/Layout/header.php");
+include("/Layout/navigation.php");
 ?>
 
 <body id="einfuehrung">
@@ -34,6 +34,6 @@ Material, welches Sie zum Lösen der Übungsaufgaben benötigen, finden Sie eben
 </body>
 
 <?php 
-include("Layout/footer.php");
+include("/Layout/footer.php");
 ?>
 </html>

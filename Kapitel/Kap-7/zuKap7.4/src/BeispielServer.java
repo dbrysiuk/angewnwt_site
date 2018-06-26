@@ -16,26 +16,25 @@ public class BeispielServer {
 		System.out.println("Server gestartet.");
 	
 		linkZumClient = serverSocket.accept(); // warten bis sich Client verbindet 
-		System.out.println("Verbindung hergestellt mit "+ serverSocket.getInetAddress());
+		System.out.println("Verbindung hergestellt.");
 		
 		inFromClient = new DataInputStream(linkZumClient.getInputStream());
 		outToClient = new DataOutputStream(linkZumClient.getOutputStream());
 	}
 	
-	public void tuWas(int startwert) throws IOException {
-		int zahl;
-		
-		outToClient.writeInt(startwert); // erste Zahl an Client
-		System.out.println("Server gesendet: "+startwert);
+	public void tuWas(int repeat) throws IOException {
+		int zahl1;
+		int zahl2;
+		int summe;
 
-		do {
-			zahl = inFromClient.readInt(); //Zahl vom Client empfangen
-			System.out.print("Server Empfangen: "+zahl);
-			zahl--; // Zahl um eins reduzieren
-			outToClient.writeInt(zahl); // neue Zahl an Client
-			System.out.println(" gesendet: "+zahl);
+		for(int i = 0;  i < repeat; i++) {
+			zahl1 = inFromClient.readInt();
+			zahl2 = inFromClient.readInt(); 
+			System.out.print("Server Empfangen: "+ zahl1 + ", "+ zahl2);
+			summe = zahl1 + zahl2; 
+			outToClient.writeInt(summe); 
+			System.out.println(" gesendet: "+summe);
 		}
-		while(zahl > 0);
 	}
 	
 	public void disconnect() throws IOException {
@@ -43,6 +42,7 @@ public class BeispielServer {
 		outToClient.close();
 		linkZumClient.close();
 		serverSocket.close();
+		System.out.println("Server beendet.");
 	}
 	
 	public static void main(String[] args) throws IOException {

@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("/Layout/header.php");
-include ("/Layout/navigation.php");
+include ("../../Layout/header.php");
+include ("../../Layout/navigation.php");
 ?>
 
 <body id="opc" onload="prettyPrint()">
@@ -22,7 +22,7 @@ include ("/Layout/navigation.php");
 <article> <a href="zuKap6.2/zuKap6.2.php"><button type="button">
 		<span>Quellcode herunterladen</span>
 	</button></a>
-	<?php include ("/Layout/buttonAnleitung.php")?>
+	<?php include ("../../Layout/buttonAnleitung.php")?>
 <p>Für Kapitel 6.2 steht uns die Klasse <a href=#OPCDemoClient.java><i>OPCDemoClient</i></a> zur Verfügung. 
 Dabei handelt es sich um einen OPC UP Client, der es erlaubt, eine Verbindung zu einem Server aufzubauen, in dessen
 Adressraum nach einem Node zu suchen und darauf zuzugreifen. Außerdem enthält das Archiv ein einfaches SPS-Demoprojekt, 
@@ -47,6 +47,6 @@ meinPrettyfier($files)
 </body>
 
 <?php 
-include ("/Layout/footer.php");
+include ("../../Layout/footer.php");
 ?>
 </html>
