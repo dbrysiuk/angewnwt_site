@@ -6,7 +6,6 @@ $files = array (
 		'zuKap2.2/src/Student.java',
 		'zuKap2.2/src/LesenSchreiben.java',
 		'zuKap2.2/src/BinaerIO.java',
-		'zuKap2.2/src/TextIO.java',
-		'zuKap2.2/src/Util.java'
+		'zuKap2.2/src/TextIO.java'
 );
 ?>
