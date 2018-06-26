@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("../../Layout/header.php");
-include ("../../Layout/navigation.php");
+include ("/Layout/header.php");
+include ("/Layout/navigation.php");
 ?>
 
 <body id="grundlagen" onload="prettyPrint()">
@@ -22,7 +22,7 @@ include ("../../Layout/navigation.php");
 <article> <a href="zuKap2.2/zuKap2.php"><button type="button">
 		<span>Quellcodes herunterladen</span>
 	</button></a> 
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>Für Kapitel 2.2 stehen uns das Interface <a href=#LesenSchreiben.java><i>LesenSchreiben</i></a>,
 	sowie die Klassen <a href=#TextIO.java><i>TextIO</i></a>, <a href=#BinaerIO.java><i>BinaerIO</i></a>, 
 	<a href=#Leistung.java><i>Leistung</i></a>, <a href=#Student.java><i>Student</i></a>, 

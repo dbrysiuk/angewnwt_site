@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("../../Layout/header.php");
-include ("../../Layout/navigation.php");
+include ("/Layout/header.php");
+include ("/Layout/navigation.php");
 ?>
 
 <body id="json" onload="prettyPrint()">
@@ -22,7 +22,7 @@ include ("../../Layout/navigation.php");
 <article> <a href="zuKap3.3/zuKap3.3.php"><button type="button">
 		<span>Quellcode herunterladen</span>
 	</button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>Zu Kapitel 3.3 steht uns die Klasse <a href=#my1stJSON.java><i>my1stJSON</i></a> zur Verfügung, das die Datei <i>JSON-Beispiel.json</i>
 einliest. Diese Datei muss in dem Verzeichnis liegen, in dem die .class-Datei des Programms liegt.</p>
 <p>Zur Verwendung der Klasse <i>my1stJSON</i> wird die Bibliothek <i>Gson</i> benötigt, welche Daten aus der Java-Struktur heraus 
@@ -38,7 +38,7 @@ Abbildung 3.1 im Buch zeigt, wie die Bibliothek zu einem Eclipse-Projekt hinzuge
 <article> <a href="zuKap3.4/zuKap3.4.php"><button type="button">
 		<span>Quellcodes herunterladen</span>
 	</button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>In Kapitel 2 (Grundlagen) standen uns das Interface <a href=#LesenSchreiben.java><i>LesenSchreiben</i></a>, 
 sowie die Klassen <a href=#TextIO.java><i>TextIO</i></a>, <a href=#BinaerIO.java><i>BinaerIO</i></a>, <a href=#Leistung.java><i>Leistung</i></a>, <a href=#Student.java><i>Student</i></a>, <a href=#Util.java><i>Util</i></a> und <a href=#Verwaltung.java><i>Verwaltung</i></a> zur Verfügung, 
 mit denen zufällig erzeugte Stundentendaten in eine Textdatei oder eine Binärdatei geschrieben werden können.</p>
@@ -81,6 +81,6 @@ meinPrettyfier($files)
 </body>
 
 <?php 
-include ("../../Layout/footer.php");
+include ("/Layout/footer.php");
 ?>
 </html>

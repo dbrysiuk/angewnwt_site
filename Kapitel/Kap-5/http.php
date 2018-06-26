@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("../../Layout/header.php");
-include ("../../Layout/navigation.php");
+include ("/Layout/header.php");
+include ("/Layout/navigation.php");
 ?>
 
 <body id="http" onload="prettyPrint()">
@@ -22,7 +22,7 @@ include ("../../Layout/navigation.php");
 <article> <a href="zuKap5.6/zuKap5.6.php"><button type="button">
 		<span>Quellcodes herunterladen</span>
 	</button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>Für Kapitel 5.6 stehen uns die Klassen <a href=#HTTPClient_GET.java><i>HTTPClient_GET</i></a> und <a href=#HTTPClient_POST.java><i>HTTPClient_POST</i></a> zur Verfügung, 
 mit denen eine Get- bzw. Post-Anfrage an einen Server gesendet, Daten abgerufen und ausgegeben werden können. 
 Bei der Klasse <i>HTTPClient_POST</i> werden mit der Anfrage außerdem zusätzliche Daten in Form vom Name-Wert-Paaren 
@@ -41,7 +41,7 @@ Kapitel 5.6.1 im Buch beschreibt, wie die Bibliothek zu einem Eclipse-Projekt hi
 	<a href="zuKap5.7/zuKap5.7.php"><button type="button">
 		<span>Begleitmaterial herunterladen</span>
 	</button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>Das Begleitmaterial zu Kapitel 5.7 umfasst das Java-Programm <a href=#SiemensAnmeldungAbruf.java>SiemensAnmeldungAbruf</a> für den Zugriff auf den Webserver einer SPS, sowie 
 die HTML-Dokumente <i>Zaehler.html</i>, über welches sich der Zählerstand setzen und ändern lässt und <i>Zaehlerzusatz.html</i>, in welchem der Zählerstand steht.</p>
 <p>Der Ablauf des Programms beginnt mit der Übermittlung von Benutzername und Passwort mittels einer POST-Anfrage, anschließend wird das Dokument <i>Zaehlerzusatz.html</i> vom Webserver abgerufen und der Zählerstand extrahiert.</p>
@@ -57,7 +57,7 @@ im Sekundentakt hochzählt. Das Dokument <i>Zaehlerzusatz.html</i> aktualisiert 
 	<a href="zuKap5.8/zuKap5.8.php"><button type="button">
 		<span>Quellcodes herunterladen</span>
 	</button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>Für Kapitel 5.8 stehen uns die Klassen <a href=#HTTP_GET_JSON.java><i>HTTP_GET_JSON</i></a>, <a href=#Student.java><i>Student</i></a> 
 und <a href=#Leistung.java><i>Leistung</i></a> zur Verfügung. 
 Sie ermöglichen uns, JSON-Daten per HTTP-GET-Anfrage von einem Server abzurufen und optisch ansprechend auf der Konsole auszugeben.</p>
@@ -128,6 +128,6 @@ meinPrettyfier($files)
 </body>
 
 <?php 
-include ("../../Layout/footer.php");
+include ("/Layout/footer.php");
 ?>
 </html>

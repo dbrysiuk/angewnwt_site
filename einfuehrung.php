@@ -1,19 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="de">
 <head>
-<link rel="stylesheet" href="../../Layout/CSS/style.css">
+<link rel="stylesheet" href="Layout/CSS/style.css">
 <meta charset="ISO-8859-1">
 <title>Angewandte NWT kompakt</title>
 <meta content="Philipp Schmalz" name="author">
 </head>
 
 <?php
-include ("../../Layout/header.php");
-include ("../../Layout/navigation.php");
+include("Layout/header.php");
+include("Layout/navigation.php");
 ?>
 
 <body id="einfuehrung">
-<a href=" http://www.springer.com/9783658159030"><img src="../../Images/cover.png" alt="Foto vom Buchcover" width="250" height="370" class="cover"></a>
+<a href=" http://www.springer.com/9783658159030"><img src="Images/cover.png" alt="Foto vom Buchcover" width="250" height="370" class="cover"></a>
 <main>
 <h3>Herzlich Willkommen!</h3>
 <hr>
@@ -34,6 +34,6 @@ Material, welches Sie zum Lösen der Übungsaufgaben benötigen, finden Sie eben
 </body>
 
 <?php 
-include ("../../Layout/footer.php");
+include("Layout/footer.php");
 ?>
 </html>

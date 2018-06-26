@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("../../Layout/header.php");
-include ("../../Layout/navigation.php");
+include ("/Layout/header.php");
+include ("/Layout/navigation.php");
 ?>
 
 <body id="tcp" onload="prettyPrint()">
@@ -35,7 +35,7 @@ include ("../../Layout/navigation.php");
 	<a href="zuKap7.4/zuKap7.4.php"><button type="button">
 		<span>Quellcodes herunterladen</span>
 	</button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p> Für Kapitel 7.4 stehen uns die Klassen <a href=#BeispielClient.java><i>BeispielClient</i></a> und <a href=#BeispielServer.java><i>BeispielServer</i></a>, 
 sowie <a href=#BeispielClientGepuffert.java><i>BeispielClientGepuffert</i></a> und <a href=#BeispielServerGepuffert.java><i>BeispielServerGepuffert</i></a> zur Verfügung. Die letzten beiden verfügen dabei im Vergleich 
 zu den ersten über einen gepufferten OutputStream (<code>BufferedOutputStream</code>).</p> 
@@ -51,7 +51,7 @@ der sich im Archiv befindlichen Java-Klassen.</p>
 	<a href="zuKap7.5/zuKap7.5.php"><button type="button">
 		<span>Quellcodes herunterladen</span>
 	</button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>Für Kapitel 7.5 (Studentenverwaltung) stehen uns im Vergleich zu dem Archiv aus Kapitel 3.3 mit dem Interface <a href=#LesenSchreiben.java><i>LesenSchreiben</i></a>, 
 sowie den Klassen <a href=#TextIO.java><i>TextIO</i></a>, <a href=#BinaerIO.java><i>BinaerIO</i></a>, <a href=#JSON_IO.java><i>JSON_IO</i></a>, <a href=#Leistung.java><i>Leistung</i></a>, <a href=#Student.java><i>Student</i></a>, <a href=#Util.java><i>Util</i></a> und 
 <a href=#Verwaltung.java><i>Verwaltung</i></a> zusätzlich die Klassen <a href=#NetzwerkIO.java><i>NetzwerkIO</i></a>, <a href=#NetzwerkIOServer.java><i>NetzwerkIOServer</i></a> und <a href=#NetzwerkIODemoServer.java><i>NetzwerkIODemoServer</i></a> zur Verfügung, 
@@ -88,6 +88,6 @@ meinPrettyfier($files)
 </body>
 
 <?php 
-include ("../../Layout/footer.php");
+include ("/Layout/footer.php");
 ?>
 </html>

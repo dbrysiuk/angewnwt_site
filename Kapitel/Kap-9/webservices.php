@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("../../Layout/header.php");
-include ("../../Layout/navigation.php");
+include ("/Layout/header.php");
+include ("/Layout/navigation.php");
 ?>
 
 <body id="webservices" onload="prettyPrint()">
@@ -23,7 +23,7 @@ include ("../../Layout/navigation.php");
     <article> <a href="zuKap9.2/zuKap9.2.php"><button type="button">
         		<span>Quellcodes herunterladen</span>
 	    </button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>Für Kapitel 9.2 ...</p>
 </article> </main>
 
@@ -33,7 +33,7 @@ include ("../../Layout/navigation.php");
     <article> <a href="zuKap9.4/zuKap9.4.php"><button type="button">
                 <span>Quellcodes herunterladen</span>
             </button></a>
-        <?php include ("../../Layout/buttonAnleitung.php")?>
+        <?php include ("/Layout/buttonAnleitung.php")?>
         <p>Für Kapitel 9.4 ...</p>
     </article> </main>
 
@@ -43,7 +43,7 @@ include ("../../Layout/navigation.php");
     <article> <a href="zuKap9.4.2/zuKap9.4.2.php"><button type="button">
                 <span>Quellcodes herunterladen</span>
             </button></a>
-        <?php include ("../../Layout/buttonAnleitung.php")?>
+        <?php include ("/Layout/buttonAnleitung.php")?>
         <p>Für Kapitel 9.4.2 ...</p>
     </article> </main>
 
@@ -53,7 +53,7 @@ include ("../../Layout/navigation.php");
     <article> <a href="zuKap9.5/zuKap9.5.php"><button type="button">
                 <span>Quellcodes herunterladen</span>
             </button></a>
-        <?php include ("../../Layout/buttonAnleitung.php")?>
+        <?php include ("/Layout/buttonAnleitung.php")?>
         <p>Für Kapitel 9.5 ...</p>
     </article> </main>
 
@@ -108,5 +108,5 @@ meinPrettyfier($files)
 </body>
 
 <?php
-include ("../../Layout/footer.php");
+include ("/Layout/footer.php");
 ?>

@@ -11,8 +11,8 @@
 </head>
 
 <?php
-include ("../../Layout/header.php");
-include ("../../Layout/navigation.php");
+include ("/Layout/header.php");
+include ("/Layout/navigation.php");
 ?>
 
 <body id="udp" onload="prettyPrint()">
@@ -22,7 +22,7 @@ include ("../../Layout/navigation.php");
 <article> <a href="zuKap8.3/zuKap8.php"><button type="button">
 		<span>Quellcodes herunterladen</span>
 	</button></a>
-	<?php include ("../../Layout/buttonAnleitung.php")?>
+	<?php include ("/Layout/buttonAnleitung.php")?>
 <p>Für Kapitel 8.3 stehen uns die Klassen <a href=#BeispielUDPPartner1.java><i>BeispielUDPPartner1</i></a> und <a href=#BeispielUDPPartner2.java><i>BeispielUDPPartner2</i></a> zur Verfügung, 
 mit denen Daten über UDP/IP ausgetauscht werden können.</p>
 <p>Partner2 sendet im Sekundentakt ein Datagramm mit einem Integer-Wert an eine IP-Adresse und einen Port. 
@@ -44,6 +44,6 @@ meinPrettyfier($files)
 </body>
 
 <?php 
-include ("../../Layout/footer.php");
+include ("/Layout/footer.php");
 ?>
 </html>
