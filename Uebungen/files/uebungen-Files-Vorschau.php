@@ -1,0 +1,21 @@
+<?php
+$files = array (
+		'Uebungen/Loes_Aufg_2_1.java',
+		'Uebungen/Loes_Aufg_2_2.java',
+		'Uebungen/Loes_Aufg_2_3a.java',
+		'Uebungen/Loes_Aufg_2_3b.java',
+		'Uebungen/Loes_Aufg_2_4.java',
+		'Uebungen/Loes_Aufg_2_5.java',
+		'Uebungen/Loes_Aufg_3_1.java',
+		'Uebungen/Loes_Aufg_5_1.java',
+		'Uebungen/Loes_Aufg_5_2a.java',
+		'Uebungen/Loes_Aufg_5_2b.java',
+		'Uebungen/Loes_Aufg_5_3.java',
+		'Uebungen/Loes_Aufg_7_1Client.java',
+		'Uebungen/Loes_Aufg_7_1Server.java',
+		'Uebungen/Loes_Aufg_7_2Client.java',
+		'Uebungen/Loes_Aufg_7_2Server.java',
+		'Uebungen/Loes_Aufg_8_1.java',
+		'Uebungen/Loes_Aufg_8_2.java',
+);
+?>

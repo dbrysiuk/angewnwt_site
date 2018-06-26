@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- AWP-Kommandos zum initialisieren der Variablen die geschrieben werden sollen -->
+
+<!-- AWP_In_Variable Name='"Setzen"' -->
+<!-- AWP_In_Variable Name='"Ruecksetzen"' -->
+<!-- AWP_In_Variable Name='"Eingabewert"' -->
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Zähler</title>
+</head>
+
+<body>
+  <h2>Bedienung eines S7-Zählers</h2>
+
+  <!-- Der aktuelle Zählwert wird in einem Inlineframe angezeigt(Webeite "Zaehlerzusatz" mit 1-sekündlicher Aktualisierung) -->
+  <iframe src="Zaehlerzusatz.html" name="Iframe1" width="200" height="50" scrolling="no" frameborder="1">
+  </iframe>
+
+  <!--Das Eingabefeld für den Zählerstartwert - dieser wird durch Buttonklick in die Steuerung übernommen -->
+  <form method="post" action ="" onsubmit="returnCheck();">
+    <input type="text" name='"Eingabewert"' maxlength="4" style="width:50px"/>
+    <input type="submit" value="Wert übernehmen" style="width:142px"/>
+  </form>
+
+  <!-- Der Zähler wird auf den Startwert gesetzt -->		
+  <form method="post" action="">
+    <input type="submit" value="Setze Zähler" style="width: 200px"/>
+    <input type="hidden" name='"Setzen"'value="1"/>
+  </form>
+
+  <!-- Der Zähler wird auf 0 rückgesetzt -->
+  <form method="post" action="">
+    <input type="submit" value="Rücksetze Zähler" style="width: 200px"/>
+    <input type="hidden" name='"Ruecksetzen"'value="1"/>
+  </form>
+
+</body>
+
+</html>

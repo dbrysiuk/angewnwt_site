@@ -1,0 +1,329 @@
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: #333333;
+	margin: 10px auto;
+	max-width: 100em;
+	overflow-y: scroll;
+}
+
+pre {
+  overflow: auto;
+}
+
+*, ::before, ::after {
+	box-sizing: inherit;
+}
+
+.cover {
+	float: right;
+	vertical-align: middle;
+	display: table-cell;
+	box-shadow: 5px 5px 5px gray;
+	margin: 10px 15px 20px 40px;
+	border-radius: 0em;
+}
+
+.extrasmall {
+	max-width: 30%;
+}
+
+.small {
+	max-width: 40%;
+}
+
+.medium {
+	max-width: 50%;
+}
+
+.large {
+	max-width: 70%;
+}
+
+figcaption {
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+header, 
+main, 
+nav,  
+aside, 
+footer {
+	padding: 10px;
+	margin: 10px;
+}
+
+header {
+	border-radius: 0.5em;
+	border: 1px solid;
+	border-color: slategray;
+	min-height: 7.2em;
+}
+
+header h1 {
+	margin: 0px 0px 0px 0px;
+	padding: 5px 0px 0px 0px;
+	font-weight: normal;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+header h2 {
+	margin: 8px 0px 0px 0px;
+	padding: 0px;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 1.8em;
+	text-align: center;
+}
+
+header img {
+	width: 197px;
+	height: 93px;
+	margin-right: 50px;
+	float: left;
+	vertical-align: middle;
+}
+
+nav {
+	font-size: 14px;
+	text-align: center;
+	border-radius: 0.5em;
+	background: #eff7ff;
+	padding-right: 5px;
+	padding-top: 18px; 
+}
+
+nav ul {
+	padding-left: 2em;
+	text-align: left;
+}
+
+nav li {
+	list-style: decimal;
+	text-align: left;
+}
+
+nav ul .anhang {
+	list-style: upper-latin;
+}
+
+nav a {
+	display: block;
+	text-align: left;
+	padding: 4px;
+	margin: 0px 10px 2px 3px;
+	color: #333;
+	text-decoration: none;
+	border: 1px solid;
+	border-radius: 0.1em;
+	border-color: transparent;
+	transition: 0.1s;
+	/*Transparenter Rand um Navigationspunkte, damit bei hover keine Verzerrung durch zusätzliches Element auftritt*/
+}
+
+.navHead {
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+nav ul a:hover, 
+nav ul a:active, 
+#grundlagen #navGrundl a,
+#einfuehrung #navEinf a,
+#json #navJson a,
+#html #navHtml a,
+#http #navHttp a,
+#opc #navOpc a,
+#tcp #navTcp a,
+#udp #navUdp a,
+#webservices #navWS a,
+#wasFehlt #navWasFehlt a,
+#loes #navLoes a {
+	color: black;
+	background-color: gold;
+	font-weight: bold;
+	border: 1px solid;
+	border-radius: 0.1em;
+	border-color: #33486a;
+	transition: 0.1s;
+}
+
+main {
+	margin-top: 0px; 
+	display : block;
+	min-width: 16em;
+	/*background: #eff7ff;*/
+	border-radius: 0.5em;
+	display: block;
+	/* Mindestbreite (der Ueberschrift) verhindert Anzeigefehler in modernen Browsern */
+}
+
+main h3 {
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+article, 
+section {
+	font-size: 15px;
+	margin: 10px 0px 10px 10px;
+}
+
+article .willkommen {
+	margin: 0px;
+	padding: 0px;
+}
+
+article h1,
+section h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+article h2,
+section h2 {
+	text-align: center;
+	font-weight: lighter;
+}
+
+article h3,
+section h3 {
+	text-align: center;
+	font-weight: lighter;
+	font-size: 18px;
+}
+
+.javacode {
+	font-size: 14px;
+}
+
+pre {
+	font-size: 12px;
+	border-radius: 4px;
+}
+
+table {
+	text-align: center;
+}
+
+th {
+	width: 160px;;
+}
+
+button {
+	background-color: gold;
+	border: 1px solid;
+	border-radius: 2px;
+	color: black;
+	padding: 4px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.grau {
+	background-color: #f5f5f5;
+	margin-bottom: 2px;
+}
+
+.sitelinks {
+	background-color: #f5f5f5;
+	border-color: gray;
+	color: #2f2f2f;
+	font-size: 13px;
+	padding: 2px 12px;
+	margin: 0px;
+	width: 96%;
+}
+
+button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+button span:after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+button:hover span {
+	padding-right: 25px;
+}
+
+button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+button.sitelinks span {
+	transition: 0s;
+}
+
+button.sitelinks span:after {
+	content: none;	
+	position: inherit;
+	opacity: 0;
+	top: 0;
+	right: 0px;
+	transition: 0s;
+}
+
+button.sitelinks:hover span {
+	padding: 0px 12px 0px 0px;
+}
+
+button.sitelinks:hover {
+	font-weight: normal;
+	padding-right: 0px;
+	background: #e0e0e0;
+}
+
+aside {
+	background: #ebf5d7;
+	border-color: #8db243;
+}
+
+@media ( min-width : 32em) {
+	/* mehrspaltiges Layout für breitere Viewports */
+	nav {
+		float: left;
+		width: 15em;
+		height: 370px; /* Feste Hoehe, um bspw. Coverbild optisch anpassen zu können */
+	}
+	main {
+		margin-top: 20px;
+		margin-left: 15em;
+	}
+}
+
+footer {
+	background: #eff7ff;
+	border-radius: 0.5em;
+	clear: both;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: right;
+}
+
+a {
+	color: #001a5c;
+}
+
+.noline {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}

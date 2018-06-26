@@ -1,0 +1,24 @@
+<?php
+$files = array (
+		'../Loes_Aufg_2_1.java',
+		'../Loes_Aufg_2_2.java',
+		'../Loes_Aufg_2_3a.java',
+		'../Loes_Aufg_2_3b.java',
+		'../Loes_Aufg_2_4.java',
+		'../Loes_Aufg_2_5.java',
+		'../Loes_Aufg_3_1.java',
+		'../Loes_Aufg_5_1.java',
+		'../Loes_Aufg_5_2a.java',
+		'../Loes_Aufg_5_2b.java',
+		'../Loes_Aufg_5_3.java',
+		'../Loes_Aufg_7_1Client.java',
+		'../Loes_Aufg_7_1Server.java',
+		'../Loes_Aufg_7_2Client.java',
+		'../Loes_Aufg_7_2Server.java',
+		'../Loes_Aufg_8_1.java',
+		'../Loes_Aufg_8_2.java',
+		'../Wiresharkmitschnitt_ungefiltert_Aufgabe4.2.pcapng',
+		'../Wiresharkmitschnitt_Aufgabe4.3.pcapng',
+		'../Wiresharkmitschnitt_Aufgabe4.5.pcapng'
+);
+?>
